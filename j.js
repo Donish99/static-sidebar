@@ -37,6 +37,7 @@ var s = L.Class.extend({
 var map = L.map("map", {
   zoom: 5,
   center: [43, 63],
+  zoomControl: false,
 });
 
 var layer = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -58,4 +59,5 @@ L.control.layers(overLays).addTo(map);
 var o = new s("sidebar");
 o.addTo(map);
 
-L.control.scale({ position: "topright" }).addTo(map);
+L.control.scale({ position: "bottomright" }).addTo(map);
+L.control.zoom({ position: "topright" }).addTo(map);
