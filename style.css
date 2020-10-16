@@ -62,5 +62,5 @@ body,
   }
 }
 .open {
-  animation: move-left s forwards;
+  animation: move-left 1s forwards;
 }
