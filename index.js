@@ -21,4 +21,5 @@ var overLays = {
 L.control.layers(overLays).addTo(map);
 
 var o = L.sidebar("sidebar");
+
 o.addTo(map);
